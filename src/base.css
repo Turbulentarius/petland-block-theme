@@ -1,0 +1,21 @@
+
+@theme {
+  --color-header-background: #ccd1b9;
+  --color-main-background: #e5e8dc;
+  --color-main: #004C3A;
+  --color-main-hover: #00654C;
+  --color-main-glass: rgba(0, 65, 58, 0.8);
+  --color-highlight: #e28d16;
+  --color-price-primary: #537B32;
+  --color-neutral: #f4f4f4;
+  --color-neutral-glass: rgba(244, 244, 244, 0.8);
+
+  --color-visited-link: #222222;
+  --color-unvisited-link: #004C3A;
+  --color-active-link: #B57112;
+  --color-hover-link: #007054;
+
+  /* Redefine wp variables from theme.json here because Tailwind doesn't know about them */
+  --wp--style--layout--content-size: 1300px;
+  --wp--style--layout--wide-size: 1500px;
+}

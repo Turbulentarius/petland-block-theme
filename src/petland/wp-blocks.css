@@ -1,0 +1,28 @@
+/* Block styling
+   Applies to various Wordpress blocks, some inserted through the Gutenberg editor.
+*/
+.wp-block {
+  max-width: var(--wp--style--layout--content-size);
+  margin: 0 auto;
+}
+
+.alignwide,
+.wp-block[data-align="wide"] {
+  max-width: var(--wp--style--layout--wide-size);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignfull,
+.wp-block[data-align="full"] {
+  @apply w-[100dvw] max-w-none relative left-1/2 right-1/2 -ml-[50dvw] -mr-[50dvw];
+}
+
+.wp-block-group.is-layout-flex,
+.wp-block-group.is-layout-grid {
+  gap: var(--wp--style--block-gap, 1rem);
+}
+
+.wp-block-button__link:hover {
+  @apply brightness-110;
+}

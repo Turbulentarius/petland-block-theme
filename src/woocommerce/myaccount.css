@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import '../base.css';
+
+/* WooCommerce MyAccount styling */
+.petland-account-page {
+  .page-content {
+    @apply my-4;
+  }
+  .woocommerce {
+    @apply flex gap-4;
+    /* horizontal flex and spacing */
+  }
+
+  .woocommerce-info,
+  .woocommerce-MyAccount-content {
+    @apply bg-white rounded-lg flex-1 px-4;
+    /* equal width, equal height via flex */
+  }
+
+  .woocommerce-MyAccount-navigation {
+    @apply bg-white rounded-lg px-4;
+
+    .woocommerce-MyAccount-navigation-link {
+      a {
+        @apply flex flex-nowrap w-full rounded-lg p-2 block my-2 gap-4 justify-between no-underline;
+        border: 0.2rem solid var(--color-main-background);
+      }
+
+      a:hover {
+        @apply brightness-[115%];
+        border-color: var(--color-main);
+      }
+    }
+
+    .woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout {
+      a {
+        @apply bg-[var(--color-main-background)] text-black;
+      }
+    }
+
+    .is-active {
+      a {
+        @apply bg-[var(--color-active-link)] text-white border-transparent;
+      }
+    }
+  }
+
+  .woocommerce-MyAccount-content {
+    .woocommerce-button,
+    .button,
+    a.edit {
+      @apply bg-[var(--color-main)] text-white font-bold m-2 py-2 px-4 rounded-full text-center no-underline border-white inline-block text-xl;
+    }
+
+    .woocommerce-button:hover,
+    .button:hover,
+    a.edit:hover {
+      @apply brightness-[115%] cursor-pointer;
+    }
+  }
+
+
+  #customer_login {
+    @apply flex p-4 rounded-lg bg-white;
+  }
+
+  .woocommerce {
+    .woocommerce-form {
+      @apply p-4;
+    }
+
+    .woocommerce-MyAccount-content {
+      font-family: 'Abel', sans-serif;
+      @apply text-xl;
+
+      address {
+        @apply border-gray-600 border-1 rounded-lg p-4 min-h-32 my-2;
+      }
+    }
+
+    .woocommerce-PaymentMethod {
+      @apply flex flex-row gap-4;
+    }
+
+    .input-text {
+      @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:border-[var(--color-main)];
+    }
+
+    #billing_first_name_field,
+    #billing_last_name_field {
+      @apply inline-block pr-4;
+    }
+
+    .required {
+      @apply text-red-500;
+    }
+
+    .woocommerce-password-strength.bad {
+      @apply text-red-600;
+    }
+
+    .woocommerce-password-strength.good {
+      @apply text-orange-600;
+    }
+
+    .woocommerce-password-strength.strong {
+      @apply text-green-600;
+    }
+
+    .woocommerce-Addresses.col2-set {
+      @apply lg:columns-2;
+    }
+  }
+}

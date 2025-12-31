@@ -1,0 +1,95 @@
+/* -------------------- Product listings -------------------- */
+.woocommerce-result-count {
+  @apply py-1;
+}
+
+.petland-top-description {
+  @apply px-4 pt-4;
+}
+
+.woocommerce-no-products-found {
+  @apply p-4;
+}
+
+.petland-woo-products {
+  gap: 0.5rem;
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4;
+
+  .product {
+    /* aka product cards */
+    min-height: 350px;
+    @apply flex flex-col flex-nowrap no-underline justify-between bg-white rounded-lg my-2;
+
+    .woocommerce-LoopProduct-link {
+      @apply flex items-start flex-col w-full no-underline overflow-hidden flex-none rounded-lg;
+
+      img {
+        transition: filter 0.3s, transform 0.3s;
+        @apply aspect-square w-full m-auto h-60 object-contain z-1 relative flex-1;
+      }
+
+      .price {
+        @apply flex-1 align-bottom;
+      }
+
+      del {
+        .woocommerce-Price-amount {
+          @apply text-gray-600;
+        }
+      }
+    }
+
+    .woocommerce-LoopProduct-link {
+      @apply relative z-1 text-gray-800;
+    }
+
+    .woocommerce-LoopProduct-link:hover img {
+      transform: scale(1.1);
+      filter: grayscale(60%);
+    }
+
+    .price-buybtn-wrap {
+      a {
+        @apply block;
+      }
+
+      .added_to_cart {
+        @apply hidden;
+      }
+    }
+
+    .onsale {
+      @apply absolute top-1 left-1 z-2 opacity-80 font-bold bg-yellow-300 rounded-lg p-1;
+    }
+  }
+
+  .button.add_to_cart_button {
+    @apply text-white;
+  }
+
+  .button.add_to_cart_button.added::after {
+    content: "\2713";
+    @apply ml-2 text-white font-bold;
+  }
+
+  .product_type_simple {
+    border: 0.2rem solid var(--color-main-background);
+    @apply m-2 py-2 px-4 rounded-full text-center;
+  }
+
+  .woocommerce-loop-product__title {
+    @apply bg-white z-2 relative text-lg w-full px-2;
+  }
+
+  .price {
+    @apply mx-2 font-bold;
+  }
+
+  .star-rating {
+    @apply p-2;
+  }
+}
+/* The product loading box - for ajax functionality */
+.product-loading {
+  @apply max-h-48 p-4;
+}

@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import './base.css';
+
+
+.wp-block-woocommerce-product-collection-is-layout-flow {
+
+  .block-editor-block-list__block {
+    li {
+      @apply bg-white rounded-lg;
+      
+      box-shadow: 0 0 0.2rem black;
+      text-align: left;
+
+      .wp-block-button {
+        @apply px-2;
+        align-items: normal;
+
+        a {
+          @apply bg-[var(--color-main)] text-white;
+        }
+      }
+      .wc-block-formatted-money-amount {
+        @apply text-green-600;
+      }
+    }
+  }
+
+}

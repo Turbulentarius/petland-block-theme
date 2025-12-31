@@ -1,0 +1,21 @@
+{
+  "name": "petland",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "build:blocks": "node build-scripts/build-blocks-scripts.ts && node build-scripts/build-blocks-css.ts",
+    "build:block:latest-posts": "cross-env BLOCK=latest-posts vite build --config vite.config.blocks.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "cross-env": "^10.1.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  }
+}

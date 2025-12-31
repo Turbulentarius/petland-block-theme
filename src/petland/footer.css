@@ -1,0 +1,19 @@
+/* All the footer related stylings
+   Note. The footer is editable in Gutenberg as a Custom Post Type "template",
+   so we should not add too much styling to the footer from here.
+
+   Make sure generic styles here can be overriden.
+*/
+
+.petland-site-footer {
+  ol,
+  ul {
+    li {
+      @apply list-none;
+
+      a {
+        @apply no-underline;
+      }
+    }
+  }
+}

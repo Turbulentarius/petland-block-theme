@@ -1,0 +1,51 @@
+/* WooCommerce Cart Widget
+   This code only applies to the mini-cart widget, and not for the mini-cart PopUp
+   Note. The mini-cart popup is a block-template, that can be edited in the block editor.
+*/
+
+.widget_shopping_cart_content {
+
+  li {
+    @apply flex flex-row-reverse justify-between;
+
+    .part-one {
+      .remove_from_cart_button {
+        @apply flex items-center justify-center w-8 h-8 border-red-500 border-1 text-red-500 rounded-full no-underline font-bold leading-none;
+      }
+
+      @apply flex items-center justify-center;
+    }
+
+    .part-two {
+      a {
+        @apply block no-underline text-black;
+      }
+    }
+
+    a {
+      .attachment-woocommerce_thumbnail {
+        @apply h-36 w-auto;
+      }
+    }
+  }
+
+  .woocommerce-mini-cart__total {
+    @apply my-4 py-4 border-t-2 border-b-2 border-black;
+  }
+
+  .woocommerce-mini-cart__buttons {
+    @apply flex justify-center;
+
+    .button {
+      @apply bg-[var(--color-highlight)] p-0 text-center rounded-full m-2 p-4 text-white no-underline min-w-32 inline-block;
+    }
+
+    .button.checkout {
+      @apply bg-[var(--color-main)];
+    }
+  }
+
+  .woocommerce-Price-amount {
+    @apply text-green-600;
+  }
+}

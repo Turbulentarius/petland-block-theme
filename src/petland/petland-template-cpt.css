@@ -1,0 +1,9 @@
+/* Template post type styling */
+.petland-404-page {
+  .petland-404-image {
+    img {
+      @apply block m-auto;
+      max-height: 40vh;
+    }
+  }
+}

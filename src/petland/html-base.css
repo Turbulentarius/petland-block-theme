@@ -1,0 +1,53 @@
+body {
+  @apply bg-main-background overflow-x-clip;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+h4 {
+  @apply text-lg;
+}
+
+h5,
+h6 {
+  @apply text-base font-semibold;
+}
+
+/* Links
+   This part is tricky, because different parts of the site might call for different styling.
+   We need to make sure users can still override colors in Gutenberg.
+*/
+p {
+  a {
+    @apply text-[var(--color-main)] hover:text-[var(--color-hover-link)] transition-colors;
+  }
+}
+
+.secondary-content {
+  a:link {
+    @apply text-[var(--color-unvisited-link)];
+  }
+
+  a:visited {
+    @apply text-[var(--color-visited-link)];
+  }
+
+  a:hover {
+    @apply text-[var(--color-hover-link)];
+  }
+
+  a:active {
+    @apply text-[var(--color-active-link)];
+  }
+}

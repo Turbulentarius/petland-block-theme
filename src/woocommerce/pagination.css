@@ -1,0 +1,32 @@
+.page-numbers {
+  @apply flex text-lg inline-flex -space-x-px text-sm my-4;
+
+  li {
+
+    a,
+    .current,
+    .dots {
+      @apply w-10 h-10 mx-2 p-2 text-white rounded-full flex justify-center no-underline font-bold;
+    }
+
+    a {
+      @apply bg-[var(--color-main)] hover:bg-[var(--color-main-hover)] transition-colors;
+    }
+
+    a:visited {
+      @apply hover:bg-[var(--color-main-hover)] transition-colors bg-[var(--color-visited-link)];
+    }
+
+    a:active {
+      @apply bg-[var(--color-active-link)];
+    }
+
+    .current {
+      @apply bg-[var(--color-active-link)];
+    }
+
+    .dots {
+      @apply text-black text-3xl;
+    }
+  }
+}

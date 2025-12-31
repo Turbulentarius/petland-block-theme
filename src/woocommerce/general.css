@@ -1,0 +1,16 @@
+.woocommerce-notices-wrapper {
+  @apply p-4;
+}
+
+.woocommerce-info {
+  @apply mb-4;
+}
+
+.woocommerce-message {
+  @apply flex items-center gap-2 p-4 mb-4 rounded-xl border border-green-700/30 bg-green-50 text-green-800 font-medium shadow-sm;
+}
+
+.woocommerce-message::before {
+  content: '✔';
+  @apply text-green-700 text-lg;
+}

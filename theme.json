@@ -1,0 +1,182 @@
+{
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1300px",
+      "wideSize": "1500px"
+    },
+    "spacing": {
+      "blockGap": "1rem"
+    },
+    "color": {
+      "background": true,
+      "custom": true,
+      "customDuotone": true,
+      "customGradient": true,
+      "defaultGradients": true,
+      "defaultPalette": true,
+      "duotone": [],
+      "gradients": [],
+      "link": false,
+      "palette": [
+        {
+          "slug": "header-background",
+          "name": "Header Background",
+          "color": "var(--color-header-background)"
+        },
+        {
+          "slug": "main-background",
+          "name": "Main Background",
+          "color": "var(--color-main-background)"
+        },
+        { "slug": "main", "name": "Main", "color": "var(--color-main)" },
+        {
+          "slug": "main-hover",
+          "name": "Main Hover",
+          "color": "var(--color-main-hover)"
+        },
+        {
+          "slug": "highlight",
+          "name": "Highlight",
+          "color": "var(--color-highlight)"
+        },
+        {
+          "slug": "price-primary",
+          "name": "Price Primary",
+          "color": "var(--color-price-primary)"
+        },
+        {
+          "slug": "neutral",
+          "name": "Neutral",
+          "color": "var(--color-neutral)"
+        },
+        {
+          "slug": "visited-link",
+          "name": "Visited Link",
+          "color": "var(--color-visited-link)"
+        },
+        {
+          "slug": "unvisited-link",
+          "name": "Unvisited Link",
+          "color": "var(--color-unvisited-link)"
+        },
+        {
+          "slug": "active-link",
+          "name": "Active Link",
+          "color": "var(--color-active-link)"
+        },
+        {
+          "slug": "hover-link",
+          "name": "Hover Link",
+          "color": "var(--color-hover-link)"
+        }
+      ],
+      "text": true
+    },
+    "typography": {
+      "fontSizes": [
+        { "slug": "small", "size": "0.875rem", "name": "Small" },
+        { "slug": "medium", "size": "1rem", "name": "Medium" },
+        { "slug": "large", "size": "1.5rem", "name": "Large" }
+      ],
+      "customFontSize": true,
+      "dropCap": true,
+      "fluid": false,
+      "fontFamilies": [
+        {
+          "slug": "roboto",
+          "fontFamily": "'Roboto', sans-serif",
+          "name": "Roboto"
+        },
+        {
+          "slug": "abel",
+          "fontFamily": "'Abel', sans-serif",
+          "name": "Abel"
+        },
+        {
+          "slug": "times-new-roman",
+          "fontFamily": "'Times New Roman', Times, serif",
+          "name": "Times New Roman"
+        }
+      ],
+      "fontStyle": true,
+      "fontWeight": true,
+      "letterSpacing": true,
+      "lineHeight": false,
+      "textAlign": true,
+      "textColumns": false,
+      "textDecoration": true,
+      "textTransform": true
+    },
+    "blocks": {
+      "core/paragraph": {
+        "color": { "text": true, "background": true, "link": true },
+        "typography": { "textDecoration": true }
+      },
+      "core/heading": {
+        "color": { "text": true, "background": true, "link": true },
+        "typography": { "textDecoration": true }
+      }
+    }
+  },
+  "styles": {
+    "spacing": {
+      "blockGap": "1rem"
+    },
+    "blocks": {
+      "core/paragraph": {
+        "spacing": {
+          "margin": {
+            "bottom": "1.2rem",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "core/heading": {
+        "spacing": {
+          "margin": {
+            "top": "1rem",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "core/group": {
+        "layout": {
+          "type": "flex",
+          "orientation": "vertical",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-start",
+          "alignItems": "flex-start",
+          "gap": "1rem"
+        },
+        "spacing": {
+          "padding": {
+            "left": "1rem",
+            "right": "1rem"
+          }
+        }
+      },
+      "core/columns": {
+        "spacing": {
+          "padding": {
+            "left": "1rem",
+            "right": "1rem"
+          }
+        }
+      },
+      "petland/latest-posts": {
+        "spacing": {
+          "padding": {
+            "top": "1rem",
+            "right": "1rem",
+            "bottom": "1rem",
+            "left": "1rem"
+          }
+        }
+      }
+    }
+  }
+}

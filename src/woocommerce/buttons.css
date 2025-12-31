@@ -1,0 +1,41 @@
+/*
+   Generic styles for various WooCommerce Buttons 
+   Note. We should try to create a centralized style for as many buttons as possible
+         to optimize the file size of the final css.
+*/
+.single_add_to_cart_button,
+.checkout-button,
+button.button {
+  @apply block bg-[var(--color-main)] cursor-pointer;
+}
+
+.button.add_to_cart_button,
+.single_add_to_cart_button,
+button.button,
+.checkout-button {
+  @apply text-white font-bold m-2 py-2 px-4 rounded-full text-center no-underline border-white hover:bg-[var(--color-main-hover)] transition-colors;
+}
+
+button.button:disabled,
+button.button[disabled] {
+  @apply cursor-not-allowed opacity-70 grayscale-[80%];
+  filter: grayscale(0.8) !important;
+  pointer-events: none;
+}
+
+.button.product_type_simple {
+  @apply font-bold text-[var(--color-unvisited-link)] transition-colors;
+}
+
+/* Add to cart - product listing related, but may also be used other places */
+.add_to_cart_button {
+  @apply bg-[var(--color-main)] !border-transparent transition-colors;
+}
+
+.product_type_simple:not(.add_to_cart_button):hover {
+  @apply border-[var(--color-main)];
+}
+
+.wc-block-components-button {
+  @apply rounded-full;
+}

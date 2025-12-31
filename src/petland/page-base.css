@@ -1,0 +1,62 @@
+/*
+   - Essential wrappers to constrain and control the layout.
+    E.g. Max- and min width when not overriden by user-choice in Gutenberg.
+
+   - Styling for generic pages and woo commerce product pages.
+
+*/
+
+#main {
+  @apply flex flex-col-reverse justify-end flex-nowrap px-4;
+}
+
+.main-wrapper {
+  h1 {
+    @apply px-4 pt-4 pb-0;
+  }
+}
+.main-inner-wrap {
+  @apply flex justify-center flex-col-reverse md:flex-row-reverse bg-[var(--color-main-background)];
+}
+
+#content {
+  background: var(--color-main-background);
+}
+.page-content {
+  @apply clear-both;
+}
+
+.page-content>*,
+.main-wrapper,
+.woocommerce-breadcrumb,
+.footer-content,
+.content-width {
+  @apply ml-auto mr-auto;
+  max-width: var(--wp--style--layout--content-size);
+}
+
+.woocommerce-breadcrumb {
+  @apply px-4 pt-4;
+}
+
+/* Contains the product content, optionally visually positioned next to petland-sidebar.
+   See also: sidebar-aside.css¨
+*/
+.secondary-content {
+  @apply bg-white rounded-lg p-4 my-4;
+}
+
+/* latest products */
+.latest-products-grid {
+  .latest-product-item {
+    @apply border-0 bg-white;
+  }
+}
+
+.cursor-pointer {
+  @apply cursor-pointer;
+}
+
+.comment-respond {
+  @apply block m-auto px-4;
+}

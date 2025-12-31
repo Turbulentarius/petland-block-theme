@@ -1,0 +1,191 @@
+/* -------------------- Product Pages -------------------- */
+.product {
+  .petland-product-part-one {
+    @apply lg:flex;
+
+    .added_to_cart {
+      /* Might be added by "Ajax add to cart for WooCommerce". and we don't really use it, so let's just hide it */
+      display:none;
+    }
+  }
+
+  .woocommerce-product-gallery {
+    @apply lg:w-1/2 relative z-1 mb-4 px-4;
+
+    .zoomImg {
+      @apply cursor-zoom-in;
+    }
+
+    li {
+      img {
+        @apply cursor-pointer;
+      }
+    }
+  }
+
+  .woocommerce-product-details__short-description {
+    @apply mt-4;
+  }
+
+  .summary {
+    h1 {
+      @apply m-0 p-0;
+    }
+
+    @apply lg:w-1/2;
+
+    .woocommerce-Price-amount {
+      @apply text-2xl text-green-600 my-4 inline-block;
+    }
+
+    .quantity {
+      input {
+        @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5;
+      }
+    }
+  }
+
+  .woocommerce-tabs {
+    @apply relative top-8;
+
+    .tabs {
+      @apply flex flex-wrap text-sm font-medium text-center border-b border-gray-200;
+
+      li {
+        @apply me-2;
+
+        a {
+          @apply no-underline text-gray-500 block p-4 bg-gray-100 rounded-t-lg no-underline font-bold;
+        }
+      }
+
+      li.active {
+        a {
+          @apply bg-[var(--color-active-link)] text-white;
+        }
+      }
+    }
+
+    .wc-tab {
+      @apply py-4 mb-4;
+
+      .woocommerce-product-attributes {
+        @apply w-full border-collapse border-spacing-0 border border-gray-100 my-4;
+
+        td,
+        th {
+          @apply border-collapse border border-gray-100 p-2 m-0 align-middle;
+          font: inherit;
+
+          p {
+            @apply m-0 p-0;
+          }
+        }
+      }
+
+      .stars {
+        span {
+          @apply block my-4;
+
+          a {
+            @apply rounded-lg border-2 border-[var(--color-main-background)] p-4 ml-4 no-underline;
+          }
+
+          a.active {
+            @apply text-white bg-[var(--color-active-link)] border-[var(--color-active-link)];
+          }
+        }
+      }
+
+      .commentlist {
+        @apply my-4;
+
+        li {
+          @apply bg-neutral my-2;
+
+          .comment_container {
+            @apply flex;
+
+            .avatar {
+              @apply h-18 w-auto;
+            }
+
+            .comment-text {
+              @apply px-4 w-full;
+            }
+
+            .star-rating {
+              @apply float-right;
+            }
+
+            .meta {
+              time {
+                @apply italic;
+              }
+            }
+
+            .description {
+              @apply px-4;
+            }
+          }
+        }
+      }
+
+      #commentform {
+        @apply my-4;
+
+        label {
+          @apply block mb-2 text-sm font-medium text-gray-900;
+        }
+
+        textarea {
+          @apply block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500;
+        }
+
+        input.submit {
+          @apply rounded-full bg-[var(--color-main)] p-2 text-white cursor-pointer px-4;
+        }
+      }
+    }
+    .woocommerce-Tabs-panel h2:first-of-type {
+      @apply invisible h-1;
+    }
+  }
+
+  .woocommerce-product-gallery__trigger {
+    @apply absolute top-4 right-4 z-2 no-underline;
+  }
+
+  .flex-control-nav {
+    @apply flex;
+  }
+
+  .upsells,
+  .woocommerce-tabs {
+    @apply clear-both;
+  }
+
+  .stock {
+    @apply bg-gray-100 rounded-lg p-2;
+  }
+  .out-of-stock {
+    @apply text-red-600;
+  }
+
+  .in-stock {
+    @apply text-green-600;
+  }
+
+  .sku_wrapper {
+    @apply font-bold block mb-4;
+
+    .sku {
+      @apply font-normal;
+    }
+  }
+
+  .posted_in,
+  .tagged_as {
+    @apply hidden;
+  }
+}

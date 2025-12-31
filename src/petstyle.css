@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import './base.css';
+
+/*
+   Instead of having one big Tailwind-based file,
+   the different components are organized roughly into seperate files,
+   and then imported in a specific order - this should speed up page-render when done with care.
+
+   Obviously, "base" and "header" should be importated first, so we make sure they are rendered more quickly.
+*/
+
+@import './petland/fonts.css';
+@import './petland/html-base.css';
+@import './petland/page-base.css';
+
+/* Header and navigation
+   Again, note the order we are loading the files (before stuff in page-content)
+*/
+@import './petland/header.css';
+@import './petland/navigation.css';
+
+ /* Sidebar, buttons, product-listing and pagination. Etc.  */
+@import './petland/sidebar-aside.css';
+@import './woocommerce/buttons.css';
+@import './woocommerce/product-listings.css'; /* Product-listings before pagination */
+@import './woocommerce/pagination.css';
+@import './woocommerce/wcapf.css'; /* May not be needed, since we have our own filters, but included just in case */
+@import './petland/wp-blocks.css';
+@import './woocommerce/general.css';
+@import './woocommerce/product-page.css';
+@import './petland/widgets.css';
+@import './woocommerce/shopping-cart-widget.css';
+@import './woocommerce/product-blocks.css';
+@import './petland/petland-template-cpt.css'; /* This should rarely apply, so load it last in the stream */
+@import './petland/footer.css';

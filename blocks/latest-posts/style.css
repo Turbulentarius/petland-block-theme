@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import '../../src/base.css';
+
+.wp-block-petland-latest-posts {
+  li {
+    @apply rounded-lg shadow bg-white overflow-hidden;
+
+    a {
+      @apply text-gray-800 block no-underline h-full focus:text-highlight flex flex-col justify-end;
+
+      h2 {
+        @apply flex-1 relative z-2 bg-white text-lg px-2;
+      }
+
+      p {
+        @apply text-sm text-gray-600 px-2;
+      }
+    }
+
+
+    img {
+      transition: transform 0.3s ease, filter 0.5s linear;
+      transform: scale(1.01);
+      @apply h-60 w-full aspect-[4/3] object-cover relative z-1;
+    }
+
+    a:hover img, a:focus img {
+      transform: scale(1.1);
+      filter: grayscale(60%);
+    }
+  }
+}

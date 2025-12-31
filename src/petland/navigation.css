@@ -1,0 +1,154 @@
+/* Mega menu.
+   Sorry for the mess of mobile and desktop styling, but hay - it works!
+   */
+body.menu-open, body.filter-menu-open {
+  @apply h-screen overflow-y-hidden;
+
+  .petland-navigation {
+    /*
+    Used in mega-menu.ts via the menu-open toggle
+    */
+    @apply overflow-y-scroll;
+  }
+}
+
+.petland-navigation {
+  @apply hidden fixed top-0 left-0 z-101 w-full h-full lg:block lg:h-auto lg:w-auto lg:relative bg-neutral lg:bg-transparent;
+
+  .menu {
+    @apply lg:bg-[var(--color-main)] lg:flex justify-center lg:flex-wrap;
+
+    .menu-item {
+      @apply lg:relative;
+
+      a {
+        @apply relative overflow-hidden text-gray-600 lg:text-white no-underline block px-4 text-nowrap py-2;
+      }
+
+      .sub-menu {
+        @apply hidden pl-2 lg:pl-0 lg:m-0 clear-both;
+
+        a {
+          @apply text-gray-600 text-base;
+        }
+
+        a:hover {
+          @apply lg:bg-neutral lg:brightness-[1.1];
+        }
+      }
+
+      .menu-item:first-child {
+        @apply mt-2;
+      }
+
+      .menu-item:last-child {
+        @apply mb-2;
+      }
+    }
+
+    .menu-item {
+      a:hover {
+        @apply bg-highlight box-content pr-4;
+      }
+    }
+
+    .menu-item-has-children {
+      @apply relative m-4 lg:m-0 rounded-sm lg:rounded-none;
+
+      >a {
+        @apply bg-gray-200 rounded-md lg:rounded-none lg:bg-transparent block;
+      }
+
+      a.open {
+        @apply bg-active-link text-white lg:bg-transparent;
+      }
+
+      button {
+        @apply absolute right-0 top-0 px-2 pt-2 z-3 float-right lg:hidden;
+      }
+
+      .sub-menu.open {
+        @apply block lg:hidden;
+      }
+    }
+
+    .menu-item-has-children>a {
+      @apply font-bold;
+    }
+
+    .menu-item-has-children>a:after {
+      content: '⌄';
+      @apply hidden lg:block lg:absolute lg:top-0 lg:right-0 mt-0.5 px-1 transition-transform duration-200;
+    }
+
+    .menu-item-has-children.petland-menu-open>a:after {
+      @apply rotate-180 mt-0.5;
+    }
+
+    .petland-menu-open {
+      @apply lg:h-auto;
+    }
+
+    .menu-item-has-children.petland-menu-open>.sub-menu {
+      @apply lg:absolute lg:block lg:rounded-lg lg:text-gray-600 z-3 lg:shadow-lg lg:bg-[var(--color-neutral)];
+
+      .sub-menu {
+        @apply left-full -top-2 z-4;
+      }
+    }
+  }
+
+  /* Submenu expand toggling button for mobile */
+  .submenu-toggle {
+    @apply lg:hidden bg-gray-300 w-8 h-full rounded-r-md flex items-center justify-center text-gray-500 transition-colors cursor-pointer;
+  }
+
+  .submenu-toggle::before {
+    content: '⌄';
+    @apply lg:hidden text-lg w-8 h-8 transition-transform duration-200;
+  }
+
+  .submenu-toggle[aria-expanded="true"] {
+    @apply bg-highlight;
+  }
+
+  .submenu-toggle[aria-expanded="true"]::before {
+    @apply rotate-180 text-white;
+  }
+
+
+}
+
+.nav-burger {
+  @apply block float-right m-4 bg-main rounded-full lg:hidden w-12 h-12 p-2 cursor-pointer;
+
+  svg {
+    @apply text-white;
+  }
+
+  svg:hover {
+    @apply bg-main-glass;
+  }
+}
+
+.petland-navigation.open {
+  @apply block;
+}
+
+.nav-close-btn {
+  @apply lg:hidden my-4 ml-auto mr-4 bg-gray-200 rounded-md p-2 flex items-center justify-center text-gray-600 hover:bg-highlight hover:text-white focus:border-gray-300 border-2 border-transparent cursor-pointer;
+}
+
+.site-header.with-adminbar {
+  .petland-navigation {
+    @apply pt-8 lg:pt-0;
+  }
+}
+
+.nav-logo-wrap {
+  @apply py-4 lg:hidden;
+}
+
+.custom-logo-in-nav {
+  @apply m-auto;
+}

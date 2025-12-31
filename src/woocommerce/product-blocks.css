@@ -1,0 +1,37 @@
+/* WooCommerce related products block
+   Note. We should attempt to merge this styling with that of other products,
+   because it is basically the same layout.
+*/
+.page-content {
+  .wc-block-product-template {
+    @apply pb-4;
+
+    li {
+      @apply bg-white text-left rounded-lg overflow-hidden pb-4;
+
+      .wp-block-button {
+        @apply px-2;
+        align-items: normal;
+
+        a {
+          @apply hover:bg-[var(--color-main-hover)] transition-colors;
+          align-items: normal;
+        }
+      }
+
+      .woocommerce-Price-amount {
+        @apply text-green-600;
+      }
+
+      img.attachment-woocommerce_thumbnail {
+        transition: filter 0.3s, transform 0.3s;
+        @apply aspect-square w-full m-auto h-60 object-contain z-1 relative flex-1;
+      }
+
+      img.attachment-woocommerce_thumbnail:hover {
+        transform: scale(1.1);
+        filter: grayscale(60%);
+      }
+    }
+  }
+}

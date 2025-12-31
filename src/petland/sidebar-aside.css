@@ -1,0 +1,41 @@
+/*
+   Note. The sidebar may contain product-listing filters,
+         so these styles are related to product listings.
+*/
+
+.petland-sidebar {
+  @apply bg-neutral lg:bg-transparent;
+}
+
+.petland-aside-menu-btn-close {
+  @apply lg:hidden mt-4 ml-auto mr-4 bg-gray-200 rounded-md p-2 flex items-center justify-center text-gray-600 hover:bg-highlight hover:text-white focus:border-gray-300 border-2 border-transparent cursor-pointer;
+
+  svg {
+    @apply w-6 h-6 fill-gray-600 text-gray-600;
+  }
+}
+
+.petland-aside-menu-btn {
+  @apply w-12 h-12 float-right my-4 p-1 rounded-full cursor-pointer lg:hidden bg-[var(--color-main)];
+
+  svg {
+    @apply w-full h-full fill-white;
+  }
+}
+
+.petland-aside-menu-btn:hover {
+  @apply bg-[var(--color-main-glass)];
+}
+
+.petland-sticky-filter-logo {
+  @apply hidden h-18 w-auto float-left mb-4;
+}
+
+.filter-menu-open {
+  .petland-sidebar {
+    @apply p-4 pt-24 fixed top-0 left-0 z-100 overflow-y-scroll w-screen h-screen block;
+  }
+  .petland-sticky-filter-logo {
+    @apply block;
+  }
+}

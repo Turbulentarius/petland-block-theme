@@ -1,0 +1,79 @@
+/* -------------------- Widgets -------------------- */
+.petland-widget {
+  @apply lg:bg-white rounded-lg p-4 text-lg my-4 mb-4;
+
+  a:link {
+    color: var(--color-unvisited-link);
+  }
+
+  a:visited {
+    color: var(--color-visited-link);
+  }
+
+  a:hover {
+    color: var(--color-hover-link);
+  }
+
+  a:active {
+    color: var(--color-active-link);
+  }
+}
+
+/* Buttons */
+.petland_simple_button {
+  @apply m-2 py-2 px-4 rounded-full text-center bg-gray-300;
+}
+
+.petland_simple_button:hover {
+  @apply brightness-[115%] cursor-pointer;
+}
+
+/* Tags filter */
+.petland-category-tags {
+  @apply flex flex-wrap gap-2;
+
+  li {
+    span.tag-link {
+      @apply block bg-[var(--color-active-link)] border-[var(--color-active-link)] text-white;
+    }
+
+    .tag-link {
+      @apply block border-2 border-[var(--color-main-background)] rounded-lg p-2 no-underline;
+    }
+
+    a.tag-link:hover {
+      @apply brightness-[115%];
+      border-color: var(--color-main);
+    }
+  }
+}
+
+/* category list filter */
+.petland-subcategory-list {
+  .petland-category-link {
+    @apply flex flex-nowrap w-full rounded-lg p-2 block my-2 gap-4 justify-between no-underline;
+    border: 0.2rem solid var(--color-main-background);
+  }
+
+  a:hover {
+    @apply brightness-[115%];
+    border-color: var(--color-main);
+  }
+
+  a {
+    .product-count {
+      @apply text-black;
+    }
+  }
+
+  .petland-category-link.active-petland-category {
+    @apply bg-[var(--color-active-link)] border-[var(--color-active-link)] text-white;
+  }
+}
+
+/* Wordpress' latest post Widget */
+.wp-block-latest-posts {
+  li {
+    @apply list-disc ml-4;
+  }
+}

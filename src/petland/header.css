@@ -1,0 +1,94 @@
+/*
+   All the header related styling for petland, including that of fibo- search which is currently hardcoded
+*/
+
+.site-header {
+  background: var(--color-header-background);
+  @apply sticky top-0 z-100 text-white;
+}
+
+.site-header.with-adminbar::before {
+  height: 32px;
+  background: #1d2327;
+  display: block;
+  content: " ";
+}
+
+.custom-logo,
+.petland-sticky-logo, .top-header-content {
+  @apply transition-opacity duration-200 ease-in-out;
+}
+
+.petland-sticky-logo {
+  @apply hidden max-h-16 w-auto min-w-[168px];
+}
+
+.custom-logo {
+  @apply block min-w-[168px];
+}
+
+.site-header.scrolled {
+  .custom-logo {
+    @apply hidden;
+  }
+  .petland-sticky-logo {
+    @apply block;
+  }
+  .top-header-content {
+    @apply opacity-0;
+  }
+}
+
+
+.petland-header-wrap {
+  max-width: var(--wp--style--layout--content-size);
+  @apply flex items-center m-auto;
+
+  .custom-logo {
+    @apply max-h-32 w-auto p-4;
+  }
+}
+
+/* Site search */
+.petland-site-search {
+  @apply flex-1;
+}
+
+.dgwt-wcas-suggestions-wrapp {
+  @apply !rounded-lg;
+}
+
+/* user-content is a header-template block that can be edited in the Wordpress backend
+   It's placed in the header visually.
+*/
+.petland-user-content {
+  @apply flex justify-center flex-col pr-4;
+
+  .wc-block-mini-cart__button {
+    .wc-block-mini-cart__icon {
+      @apply w-8 h-8;
+    }
+
+    * {
+      @apply text-[var(--color-main)];
+    }
+  }
+
+  .wc-block-mini-cart__badge {
+    @apply rounded-full bg-red-500 text-white;
+  }
+
+  .my_account_button {
+    a {
+      @apply bg-[var(--color-main)] p-0 text-center rounded-full h-12 my-2 px-4 hover:brightness-115 transition-colors;
+    }
+  }
+
+
+  /* Hide Account button and mini-cart text on mobile in the header */
+  .label,
+  .wc-block-mini-cart__amount,
+  .wc-block-mini-cart__tax-label {
+    @apply hidden sm:block;
+  }
+}

@@ -1,0 +1,15 @@
+/* Filtering specific to WooCommerce Ajax Product Filter 
+   Note. We may not need this, and it should be added only if the plugin is active.
+         Try finding another way without targeting the active filter-plugin directly.
+*/
+.wcapf-form {
+  @apply bg-white p-4 rounded-lg;
+
+  .wcapf-filter {
+    @apply py-4;
+
+    .wcapf-filter-clear-btn {
+      @apply m-4;
+    }
+  }
+}

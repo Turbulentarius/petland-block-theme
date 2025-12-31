@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Abel';
+  src: local('Abel'), url(../../fonts/subset-Abel-Regular.woff2) format('woff2'),
+    local('Abel'), url(../../fonts/subset-Abel-Regular.woff) format('woff');
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(../../fonts/subset-Roboto-Regular.woff2) format('woff2'),
+    local('Roboto'), url(../../fonts/subset-Roboto-Regular.woff) format('woff');
+  font-display: optional;
+}
