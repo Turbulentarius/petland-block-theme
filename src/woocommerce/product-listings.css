@@ -39,6 +39,10 @@
       }
     }
 
+    .added_to_cart {
+      @apply hidden;
+    }
+
     .woocommerce-LoopProduct-link {
       @apply relative z-1 text-gray-800;
     }
@@ -51,10 +55,6 @@
     .price-buybtn-wrap {
       a {
         @apply block;
-      }
-
-      .added_to_cart {
-        @apply hidden;
       }
     }
 
@@ -89,6 +89,7 @@
     @apply p-2;
   }
 }
+
 /* The product loading box - for ajax functionality */
 .product-loading {
   @apply max-h-48 p-4;

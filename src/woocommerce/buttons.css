@@ -29,7 +29,10 @@ button.button[disabled] {
 
 /* Add to cart - product listing related, but may also be used other places */
 .add_to_cart_button {
-  @apply bg-[var(--color-main)] !border-transparent transition-colors;
+  @apply bg-(--color-main) !border-transparent transition-colors;
+}
+.wp-element-button {
+  @apply bg-none;
 }
 
 .product_type_simple:not(.add_to_cart_button):hover {

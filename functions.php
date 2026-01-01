@@ -17,6 +17,9 @@ $theme_includes = [
     'lib/theme.php',
     'lib/cpt/template/register.php',
     'lib/cpt/template/init.php',
+    'includes/woocommerce/layout.php',
+    'includes/woocommerce/woo-category-petland-top-description.php',
+    'includes/woocommerce/tags-whitelist.php'
 ];
 
 foreach ($theme_includes as $file) {

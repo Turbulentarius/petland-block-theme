@@ -25,5 +25,7 @@
   "example": {},
   "textdomain": "petlandtextdomain",
   "editorScript": "file:./dist/script.js",
+  "style": "file:./dist/style.css",
+  "editorStyle": "file:./dist/style.css",
   "render": "file:./render.php"
 }

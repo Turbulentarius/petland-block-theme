@@ -51,8 +51,11 @@
     .tabs {
       @apply flex flex-wrap text-sm font-medium text-center border-b border-gray-200;
 
+      li:hover {
+        @apply !border-none;
+      }
       li {
-        @apply me-2;
+        @apply !me-2;
 
         a {
           @apply no-underline text-gray-500 block p-4 bg-gray-100 rounded-t-lg no-underline font-bold;
@@ -60,8 +63,9 @@
       }
 
       li.active {
+        @apply !border-none;
         a {
-          @apply bg-[var(--color-active-link)] text-white;
+          @apply bg-[var(--color-active-link)] !text-white;
         }
       }
     }

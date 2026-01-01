@@ -4,7 +4,7 @@ import { useBlockProps, InspectorControls } from "@wordpress/block-editor";
 import { PanelBody, RangeControl } from "@wordpress/components";
 import { useEffect, useState } from "@wordpress/element";
 import apiFetch from "@wordpress/api-fetch";
-import './style.css'
+import './style.css';
 
 registerBlockType("petland/latest-posts", {
   title: __("Latest Posts (Petland)", "petlandtextdomain"),

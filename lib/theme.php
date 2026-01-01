@@ -153,6 +153,9 @@ class Theme
     register_block_type_from_metadata(
       get_template_directory() . '/blocks/latest-posts'
     );
+    register_block_type_from_metadata(
+      get_template_directory() . '/blocks/product-listing'
+    );
   }
 
   public function theme_setup()

@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "build:blocks": "node build-scripts/build-blocks-scripts.ts && node build-scripts/build-blocks-css.ts",
-    "build:block:latest-posts": "cross-env BLOCK=latest-posts vite build --config vite.config.blocks.js"
+    "build:blocks": "node build-scripts/build-blocks-scripts.ts && node build-scripts/build-blocks-css.ts"
   },
   "devDependencies": {
     "@types/node": "^24.7.2",
