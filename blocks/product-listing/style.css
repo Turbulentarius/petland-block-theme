@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import '../../src/base.css';
+@import '../../src/woocommerce/buttons.css';
+@import '../../src/woocommerce/pagination.css';
+@import '../../src/woocommerce/product-listings.css';
+
+.wp-block-petland-product-listing .wp-element-button,
+.wp-block-petland-product-listing .wp-block-button__link { background: var(--color-main); }
