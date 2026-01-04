@@ -1,6 +1,69 @@
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group">
-  <!-- wp:site-title /-->
-  <!-- wp:navigation /-->
-</div>
+<!-- wp:group {"tagName":"header","className":"site-header"} -->
+<header class="wp-block-group site-header">
+  <!-- wp:group {"className":"top-header-content","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"main","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group top-header-content has-main-background-color has-background"
+       style="margin-top:0;margin-bottom:0">
+    <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"textColor":"white","fontSize":"medium"} -->
+    <p class="has-text-align-center has-white-color has-text-color has-link-color has-medium-font-size"
+       style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
+      Gratis levering ved køb over 499 kr. –&nbsp; Bestil inden kl. 13 på hverdage, og vi sender samme dag. E-mærket
+      <em>✓</em>
+    </p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:group {"style":{"border":{"width":"0px","style":"none"},"dimensions":{"minHeight":"0px"},"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"0"}},"backgroundColor":"header-background","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group has-header-background-background-color has-background"
+       style="border-style:none;border-width:0px;min-height:0px;margin-top:0;margin-bottom:0">
+    <!-- wp:columns {"className":"petland-header-wrap"} -->
+    <div class="wp-block-columns petland-header-wrap"><!-- wp:column -->
+      <div class="wp-block-column">
+        <!-- wp:image {"id":27996,"sizeSlug":"full","linkDestination":"none","className":"petland-sticky-logo"} -->
+        <figure class="wp-block-image size-full petland-sticky-logo"><img
+               src="http://localhost/wp-content/uploads/2021/02/Petland_RGB_side.png"
+               alt="Logo for Petland - en online butik for kæledyrsudstyr og -forsyninger" class="wp-image-27996" />
+        </figure>
+        <!-- /wp:image -->
+
+        <!-- wp:image {"id":38138,"sizeSlug":"full","linkDestination":"none","className":"custom-logo"} -->
+        <figure class="wp-block-image size-full custom-logo"><img
+               src="http://localhost/wp-content/uploads/2025/01/petland-lille-weblogo.png"
+               alt="Logo for Petland – en dansk online dyrehandel." class="wp-image-38138" /></figure>
+        <!-- /wp:image -->
+      </div>
+      <!-- /wp:column -->
+
+      <!-- wp:column -->
+      <div class="wp-block-column"><!-- wp:group {"className":"petland-site-search","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group petland-site-search"><!-- wp:shortcode -->
+          [wcas-search-form]
+          <!-- /wp:shortcode -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:column -->
+
+      <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}}} -->
+      <div class="wp-block-column"
+           style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
+        <!-- wp:group {"className":"petland-user-content","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group petland-user-content"><!-- wp:shortcode -->
+          [petland_template slug="petland-template-header-user-content"]
+          <!-- /wp:shortcode -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:column -->
+    </div>
+    <!-- /wp:columns -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:group {"style":{"dimensions":{"minHeight":"0px"},"border":{"width":"0px","style":"none","radius":"0px"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"main","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group has-main-background-color has-background"
+       style="border-style:none;border-width:0px;border-radius:0px;min-height:0px;margin-top:0;margin-bottom:0">
+    <!-- wp:petland/navigation {"align":"full"} /--></div>
+  <!-- /wp:group -->
+</header>
 <!-- /wp:group -->
