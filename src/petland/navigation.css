@@ -13,7 +13,7 @@ body.menu-open, body.filter-menu-open {
 }
 
 .petland-navigation {
-  @apply hidden fixed top-0 left-0 z-101 w-full h-full lg:block lg:h-auto lg:w-auto lg:relative bg-neutral lg:bg-transparent;
+  @apply hidden fixed mt-0 top-0 left-0 z-101 w-full h-full lg:block lg:h-auto lg:w-auto lg:relative bg-neutral lg:bg-transparent;
 
   .menu {
     @apply lg:bg-[var(--color-main)] lg:flex justify-center lg:flex-wrap;
@@ -120,7 +120,7 @@ body.menu-open, body.filter-menu-open {
 }
 
 .nav-burger {
-  @apply block float-right m-4 bg-main rounded-full lg:hidden w-12 h-12 p-2 cursor-pointer;
+  @apply block float-right !m-2 bg-main rounded-full lg:hidden w-12 h-12 p-2 cursor-pointer;
 
   svg {
     @apply text-white;
