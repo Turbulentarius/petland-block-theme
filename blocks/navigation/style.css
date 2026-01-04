@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import '../../src/base.css';
+@import '../../src/woocommerce/buttons.css';
+@import '../../src/petland/navigation.css';
+
+.editor-styles-wrapper .petland-navigation a {
+  pointer-events: none;
+  cursor: default;
+}
+
+.custom-logo {
+  display:none
+}

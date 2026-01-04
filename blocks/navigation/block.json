@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "petland/navigation",
+  "version": "0.1.0",
+  "title": "Navigation (Petland)",
+  "category": "widgets",
+  "icon": "admin-post",
+  "description": "Shows a navigation menu that works in the site header. It supports dropdowns and mobile menus.",
+  "supports": {
+    "html": false,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    }
+  },
+  "attributes": {
+    "postsToShow": { "type": "number", "default": 6 }
+  },
+  "example": {},
+  "textdomain": "petlandtextdomain",
+  "editorScript": "file:./dist/script.js",
+  "style": "file:./dist/style.css",
+  "editorStyle": "file:./dist/style.css",
+  "render": "file:./render.php"
+}
