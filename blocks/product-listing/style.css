@@ -6,3 +6,8 @@
 
 .wp-block-petland-product-listing .wp-element-button,
 .wp-block-petland-product-listing .wp-block-button__link { background: var(--color-main); }
+
+.wp-block-petland-product-listing a {
+  pointer-events: none;
+  cursor: default;
+}
