@@ -51,7 +51,18 @@
 
 /* Site search */
 .petland-site-search {
-  @apply flex-1;
+  @apply flex-1 items-center h-full; 
+
+  .dgwt-wcas-search-wrapp {
+    @apply h-full;
+  }
+
+  .dgwt-wcas-search-form {
+    @apply flex items-center h-full;
+    p {
+      @apply p-0 m-0 contents;
+    }
+  }
 }
 
 .dgwt-wcas-suggestions-wrapp {
