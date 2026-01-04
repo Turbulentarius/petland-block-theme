@@ -156,6 +156,9 @@ class Theme
     register_block_type_from_metadata(
       get_template_directory() . '/blocks/product-listing'
     );
+    register_block_type_from_metadata(
+      get_template_directory() . '/blocks/navigation'
+    );
   }
 
   public function theme_setup()
